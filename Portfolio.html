@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link href="https://fonts.google.com/specimen/Cinzel" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fauna+One&family=Grenze+Gotisch:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="playout">
+        <div class="navbar">
+          <div class="logo">
+            <a href="Index.html">ORIGIN</a>
+          </div>
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="gallery-title">
+            <h4>PORTFOLIO GALLERY</h4>
+        </div>
+        <div class="gallery">
+            <img src="images/boysroom.jpeg" alt="BoysRoom">
+            <img src="images/office.jpeg" alt="office">
+            <img src="images/kuhinja1.jpeg" alt="kuhinja1">
+            <img src="images/kuhinja2.jpeg" alt="kuhinja2">
+            <img src="images/bathroom.jpeg" alt="bathroom">
+            <img src="images/livingroom.jpeg" alt="livingroom1">
+            <img src="images/livingrum2.jpeg" alt="livingroom2">
+            <img src="images/stonifudbal.jpeg" alt="playroom">
+        </div>
+        <div class="footer-container">
+            <p>Copyright: © 2026 Kwac8. All rights reserved.</p>
+            <p>Images are © Homestyler.</p>
+          <div class="footer-links">
+            <a href="https://github.com/kwac8" target="_blank" class="github-link"> <img src="images/githubDark.webp" alt="Github"></a>
+            <img src="images/Instagram.png" alt="instagram">
+            <img src="images/linkedin.png" alt="linkedin">
+            <img src="images/facebook.png" alt="facebook">
+          </div>
+        </div>
+    </div>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    hamburger.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    hamburger.classList.toggle('is-active');
+    });
+
+    document.querySelectorAll('.navbar-links li').forEach(link => {
+    link.addEventListener('click', () => {
+        navbarLinks.classList.remove('active');
+        hamburger.classList.remove('is-active');
+    });
+});
+</script>
+
+</body>
+</html>
