@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Services</title>
+    <link href="https://fonts.google.com/specimen/Cinzel" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fauna+One&family=Grenze+Gotisch:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="slayout">
+      <div class="navbar">
+            <div class="logo">
+            <a href="index.html">ORIGIN</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar">
+            <img src="images/img3.jpeg">
+            <div id=grad2></div>
+            <div id="glass"></div>
+            <div class="portfolio-link">
+                  <h4>Need inspiration?</h4><br>
+                  <p>Check out our portfolio here!</p>
+                  <div class="interiorsvg">
+                        <a href="Portfolio.html"><img src="images/Group 3.svg" height="100" width="auto" alt="interiorsvg"></a>
+                  </div>
+            </div>
+      </div>
+      <div class="smain">
+            <ul class="process">
+                  <h2>The Process</h2>
+                  <li><p>Discovery: A deep-dive consultation to understand your goals, budget, and style preferences.</p></li>
+                  <li><p>Design: We present concepts, material samples, and layouts for your feedback.</p></li>
+                  <li><p>Realization: We handle the procurement and logistics, bringing the vision to life in your home.</p></li>
+                  <br>
+                  <p id="quote">A room is not a room without a soul.<br>Our mission is to help you find yours through intentional design.</p>
+                  <br>
+            <div class="support-note">
+             <p class="note">If you have trouble choosing or requesting a service,<br>contact us for additional support here!</p>
+             <div class="vector1">
+             <a href="Contact.html"><img src="images/Vector1.png" height="30" width="auto" alt="vector1"></a>
+            </div>
+        </div>
+       </ul>
+      </div>
+       <div class="services">
+            <p><i>Full-Service Design</i><br>
+Our most comprehensive offering — from initial consultation to final installation. We work closely with you to understand your goals, budget, and lifestyle, then manage every detail: concept development, material sourcing, contractor coordination, and delivery.</p>
+<br><p><i>Virtual Design</i><br>
+Get professional interior design guidance from the comfort of your home. You'll receive a fully customized design concept — mood boards, floor plans, product recommendations, and a step-by-step implementation guide — all delivered digitally so you can execute it at your own pace.</p>
+<br><p><i>Styling & Refresh</i><br>
+Sometimes a space just needs a new perspective. Our Styling & Refresh service breathes new life into existing rooms through curated accessory placement, furniture rearrangement, artwork selection, and layered finishing touches — no renovation required.</p>
+      </div>
+      <div class="footer-container">
+            <p>Copyright: © 2026 Kwac8. All rights reserved.</p>
+            <p>Images are © Homestyler.</p>
+        <div class="footer-links">
+            <a href="https://github.com/kwac8" target="_blank" class="github-link"> <img src="images/githubDark.webp" alt="Github"></a>
+            <img src="images/Instagram.png" alt="instagram">
+            <img src="images/linkedin.png" alt="linkedin">
+            <img src="images/facebook.png" alt="facebook">
+        </div>
+      </div>
+</div>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    hamburger.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    hamburger.classList.toggle('is-active');
+    });
+
+    document.querySelectorAll('.navbar-links li').forEach(link => {
+    link.addEventListener('click', () => {
+        navbarLinks.classList.remove('active');
+        hamburger.classList.remove('is-active');
+    });
+});
+</script>
+
+</body>
+</html>
